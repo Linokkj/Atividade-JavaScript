@@ -7,3 +7,9 @@
 
 // Questao 02
 
+let a=Number(prompt("primeiro numero"));
+    let b = Number(prompt("segundo numero"));
+
+    let soma = a+b;
+    console.log (soma);
+
