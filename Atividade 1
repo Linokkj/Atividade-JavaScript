@@ -1,0 +1,9 @@
+//  Questao 01
+    let n = "sho";
+    let i = 17;
+    let e = true;
+
+    console.log ("seu nome e",n,", sua idade",i,", vc e estudar",e);
+
+// Questao 02
+
