@@ -23,3 +23,27 @@ let dividir = a/b;
 }
 
 export default App
+
+Questao 3 
+function App(){
+  
+let a = Number(prompt("nota 1"));
+let msg = "";
+
+if (a >= 6) { 
+  msg = "aprovado"; 
+} else { 
+  msg = "reprovado"; 
+}
+
+  return (
+    <div>
+      <p>
+        {msg}
+      </p>
+    </div>  
+  )
+
+}
+
+export default App
