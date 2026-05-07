@@ -13,3 +13,33 @@ let a=Number(prompt("primeiro numero"));
     let soma = a+b;
     console.log (soma);
 
+Questao 
+
+import { useState } from "react";
+
+function App() {
+  const [nome, setNome] = useState("");
+  const [idade, setIdade] = useState("");
+  const [confirmado, setConfirmado] = useState(false);
+
+  // Variável simples que calcula o status toda vez que o componente renderiza
+  const statusIdade = idade >= 18 ? "Maior de idade" : "Menor de idade";
+
+  return (
+    <div>
+      <h1>Cadastro Simples</h1>
+      <input placeholder="Nome" onChange={(e) => setNome(e.target.value)} />
+      <input placeholder="Idade" type="number" onChange={(e) => setIdade(e.target.value)} />
+      
+      <button onClick={() => setConfirmado(true)}>Confirmar</button>
+
+      {confirmado && (
+        <div>
+          <p>Olá {nome}, você é: <strong>{statusIdade}</strong></p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default App;
